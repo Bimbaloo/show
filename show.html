@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>现场看板</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <script src="js/jquery-1.7.1.js"></script>
+    <script src="js/iconfont.js"></script>
+</head>
+<body>
+<header>
+    <span id="title">现场看板</span>
+    <time>2017年3月24日  09:26:54</time>
+</header>
+<div id="contain">
+    <div id="list-box">
+        <div class="header">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-normal"></use>
+            </svg>
+            <span>4100ZN01_1智能组装测试A线</span>
+        </div>
+        <ul class="dispatching-box">
+            <li class="dispatching-items">
+                <div class="header dispatching-title">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-normal"></use>
+                    </svg>
+                    <span>4100ZN01_1智能组装测试A线</span>
+                    <svg class="icon toggle open" aria-hidden="true" data-show="show">
+                        <use xlink:href="#icon-zhankai"></use>
+                    </svg>
+                </div>
+                <ul class="dispatching-message">
+                    <li class="message-items">
+                        <span>1</span>
+                        <span>直线电机移动到指定位置</span>
+                        <span>LsMotion000001 雷赛直线电机 </span>
+                        <span>2017-03-23 15:39:29 </span>
+                        <span>
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-normal3"></use>
+                            </svg>
+                        </span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="console-box">
+        <ul id="console-list">
+            <li class="console-items" data-show="show">
+                <div class="header">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-normal"></use>
+                    </svg>
+                    <span>4100ZN01_1智能组装测试A线</span>
+                    <svg class="icon icon-big" aria-hidden="true">
+                        <use xlink:href="#icon-kaishi"></use>
+                    </svg>
+                    <svg class="icon icon-big" aria-hidden="true">
+                        <use xlink:href="#icon-debugger"></use>
+                    </svg>
+                    <svg class="icon icon-big" aria-hidden="true">
+                        <use xlink:href="#icon-jiankong"></use>
+                    </svg>
+                    <svg class="icon toggle open" aria-hidden="true" data-show="show">
+                        <use xlink:href="#icon-zhankai"></use>
+                    </svg>
+                </div>
+                <ul class="state-box">
+                    <li>
+                        <p>运行模式</p>
+                        <p class="state">正常</p>
+                    </li>
+                    <li>
+                        <p>流水线状态</p>
+                        <p class="state">暂停</p>
+                    </li>
+                    <li>
+                        <div>
+                            <p>最近通讯时间</p>
+                            <p class="time">2017-03-23 16:34:00</p>
+                        </div>
+                        <button>初始</button>
+                    </li>
+                </ul>
+                <ul class="state-button">
+                    <li class="communication-button button show" data-name="communication">通讯状态 </li>
+                    <li class="fault-button button" data-name="fault">故障信息</li>
+                </ul>
+                <div class="table-box" data-name="communication" data-show="show">
+                    <ul class="table-head">
+                        <li class="communication-header">
+                            <span>通道编号</span>
+                            <span>通道名称</span>
+                            <span>通讯状态</span>
+                            <span>最近通讯时间</span>
+                        </li>
+                    </ul>
+                    <ul class="table-body">
+                        <li class="communication-list">
+                            <span>TD000007</span>
+                            <span>RFID读写器</span>
+                            <span>
+                                 <svg class="icon icon-min" aria-hidden="true">
+                                     <use xlink:href="#icon-warn"></use>
+                                 </svg>
+                            </span>
+                            <span>2017-03-23 16:34:00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="table-box hide" data-name="fault" data-show="hide">
+                    <ul class="table-head">
+                        <li class="fault-header">
+                            <span>故障码</span>
+                            <span>执行资源</span>
+                            <span>故障项目</span>
+                            <span>故障等级</span>
+                            <span>故障发生时间</span>
+                        </li>
+                    </ul>
+                    <ul class="table-body">
+                        <li class="fault-list">
+                            <span>f1c7ae34-65ce-4458-8d67-7bf3d3fd6500</span>
+                            <span>G00000270 Epson机器人AFC</span>
+                            <span>GZXM05 其他</span>
+                            <span>E02 II级故障</span>
+                            <span>2017-03-23 16:34:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/show.js"></script>
+</html>

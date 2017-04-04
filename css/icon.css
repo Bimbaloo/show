@@ -1,0 +1,14 @@
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 15px;
+}
+.icon-big {
+    font-size: 30px;
+    vertical-align: -9px;
+}
+.icon-min {
+    font-size: 10px;
+}
